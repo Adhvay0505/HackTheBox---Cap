@@ -4,7 +4,7 @@
 
 We'll begin by scanning all ports using `Nmap`. You can also use `rustscan` if you wish to speed up the process.
 
-### 📡 Full TCP Nmap Scan
+###  Full TCP Nmap Scan
 
 ```bash
 nmap -T4 -A -p- 10.10.10.245
