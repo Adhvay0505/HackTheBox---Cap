@@ -48,14 +48,15 @@ lets check out the HTTP service
 
 ![Screenshot From 2025-06-11 16-11-08](https://github.com/user-attachments/assets/a8bb77a8-3004-4b03-a818-d1bec41fade2)
 
-
-In the security snapshot section, we notice that the value of the /data/id increments everytime, this could mean we are able to view packet captures of other users. This is known as Insecure Direct Object Reference (IDOR), wherein a user can 
+## IDOR
+In the security snapshot section, we notice that the value of the `/data/id` increments everytime, this could mean we are able to view packet captures of other users. This is known as Insecure Direct Object Reference (IDOR), wherein a user can 
 access data owned by another user
 
 ![Screenshot From 2025-06-11 16-14-56](https://github.com/user-attachments/assets/0d9bd8ad-458d-4bea-889c-0b84c9fb5401)
 
 
-I tried /data/0 and found multiple packets 
+I tried `/data/0` and found multiple packets 
+
 ![Screenshot From 2025-06-11 16-18-32](https://github.com/user-attachments/assets/4a0044f5-8915-4369-9028-6ff4b29cc9b8)
 
 We shall download the 0.pcap file and analyse it using wireshark
@@ -69,6 +70,7 @@ password: Buck3tH4TF0RM3!
 ```
 
 I used the credentials for FTP and it worked!
+
 ![Screenshot From 2025-06-11 16-24-59](https://github.com/user-attachments/assets/098a17ec-46f3-4d1b-a4cf-35a0d680c966)
 
 It worked for SSH as well
@@ -84,14 +86,14 @@ the user flag in user.txt is in plain sight
 
 ## 💂 Privelege Escalation
 
-As the hint suggested, we shall use LinPeas.sh to escalate proveleges in this machine and gain root access, but LinPeas is not provided in the machine, hence I shall host it using a python http server and simple curl it in the machine
+We shall use LinPeas.sh to escalate priveleges in this machine and gain root access, but LinPeas is not provided in the machine, hence I shall host it using a python http server and simply `cURL` it in the machine
 
 
-Firstly, I shall start Linpeas on my Kali host and then serve it to the machine
+Firstly, I shall start Linpeas on my Kali host and then serve it to our machine
 
 ![Screenshot From 2025-06-11 16-37-16](https://github.com/user-attachments/assets/d3306b3d-3b81-4c75-ae63-69f455da1bb6)
 
-Now we can curl it to the machine !
+Now we can `curl` it to the machine !
 
 ![Screenshot From 2025-06-11 16-37-01](https://github.com/user-attachments/assets/dad6016b-0271-4f7a-914e-7ac92e0f7ad8)
 
@@ -111,9 +113,10 @@ os.system("/bin/bash")
 ```
 ![Screenshot From 2025-06-11 16-49-26](https://github.com/user-attachments/assets/7c7e46ac-54e1-4284-a7c1-1fe61fe4a423)
 
-Finally, we shall move to the root dircetory and find the root flag!
+Now that we've gained root access, we shall move to the root dircetory and find the root flag!
 
 ![Screenshot From 2025-06-11 16-52-12](https://github.com/user-attachments/assets/c6a123ef-92f5-4ea1-ae1d-2a4e3998e777)
 
 
+Happy Hacking!!!
                                                               
