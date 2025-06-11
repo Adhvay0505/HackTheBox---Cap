@@ -2,7 +2,7 @@
 
 ## 🧭 Enumeration
 
-We'll begin by scanning all ports using **Nmap**. You can also use `rustscan` if you prefer speed.
+We'll begin by scanning all ports using `Nmap`. You can also use `rustscan` if you prefer speed.
 
 ### 📡 Full TCP Nmap Scan
 
