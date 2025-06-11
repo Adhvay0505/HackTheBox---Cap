@@ -86,10 +86,8 @@ the user flag in user.txt is in plain sight
 
 ## 💂 Privelege Escalation
 
-We shall use LinPeas.sh to escalate priveleges in this machine and gain root access, but LinPeas is not provided in the machine, hence I shall host it using a python http server and simply `cURL` it in the machine
+We shall use LinPeas.sh to escalate priveleges in this machine and gain root access, but LinPeas is not provided in the machine, hence I shall host it using a python http server on my Kali box and simply `cURL` it in the machine
 
-
-Firstly, I shall start Linpeas on my Kali host and then serve it to our machine
 
 ![Screenshot From 2025-06-11 16-37-16](https://github.com/user-attachments/assets/d3306b3d-3b81-4c75-ae63-69f455da1bb6)
 
