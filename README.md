@@ -111,7 +111,7 @@ os.system("/bin/bash")
 ```
 ![Screenshot From 2025-06-11 16-49-26](https://github.com/user-attachments/assets/7c7e46ac-54e1-4284-a7c1-1fe61fe4a423)
 
-Now that we've gained root access, we shall move to the root dircetory and find the root flag!
+Now that we've gained root access, we shall move to the root directory and find the root flag!
 
 ![Screenshot From 2025-06-11 16-52-12](https://github.com/user-attachments/assets/c6a123ef-92f5-4ea1-ae1d-2a4e3998e777)
 
