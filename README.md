@@ -1,4 +1,4 @@
-#  HackTheBox — Cap Walkthrough
+#  HackTheBox — Cap Writeup
 
 ## 🧭 Enumeration
 
